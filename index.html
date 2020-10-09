@@ -1,0 +1,89 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title></title>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/clock.js"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+   </head>
+   <body onload="startTime()">
+    
+      <div class="wrapper">
+         <header>
+            <nav>
+               <div class="menu-icon">
+                  <i class="fa fa-bars fa-2x"></i>
+               </div>
+               <div class="logo">
+                  LOGO
+               </div>
+               <div class="menu">
+                  <ul>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">About</a></li>
+                     <li><a href="#">Blog</a></li>
+                
+                  </ul>
+               </div>
+            </nav>
+            <div class="section no-pad-bot">
+                <div class="container">
+                  <br><br>
+                  <div class="center-align" id="txt"></div>
+                  <div class="row center">
+
+                    <form method="get" id="search" action="http://google.com/" data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom">
+                        <input type="hidden" name="k8" value="#444444"/>
+                <input type="hidden" name="k9" value="#D51920"/>
+                <input type="hidden" name="kt" value="h"/>
+                          <input class="search-input" id="in" type="text" name="q" maxlength="150" placeholder="Search "  autofocus/>
+                          <br>
+                          <input type="submit" value="DuckDuckGo Search"  style="visibility: hidden;"  />
+                          
+                        </form>
+         </header>
+
+        
+
+       
+      <script>
+           $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                  $("nav ul").toggleClass("showing");
+            });
+      });
+
+      // Scrolling Effect
+
+      $(window).on("scroll", function() {
+            if($(window).scrollTop()) {
+                  $('nav').addClass('black');
+            }
+
+            else {
+                  $('nav').removeClass('black');
+            }
+      })
+      </script>
+      <script>
+        AOS.init();
+      </script>
+   </body>
+</html>
